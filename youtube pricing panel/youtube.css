@@ -4,6 +4,7 @@ main {
 }
 
 img {
+
     height: auto;
     width: auto;
     margin-top: 50px;
@@ -14,7 +15,7 @@ img {
     display: block;
     margin: 0px;
     font-family: sans-serif;
-    font-size: 3.5rem;
+    font-size: 55px;
     font-weight: 700;
     line-height: 4.6rem;
 
@@ -30,7 +31,7 @@ img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-grow: 1;
 }
 
@@ -121,6 +122,7 @@ a {
 
 .price-panel div {
     width: 28%;
+    height: auto;
     padding: 10px;
     border: 1px solid rgb(245, 244, 244);
     box-shadow: 1px 5px 10px 5px rgb(230, 229, 229);
@@ -196,4 +198,116 @@ a {
 .individual button {
     background-color: #0754b9;
     color: azure;
+}
+
+@media(max-width:970px) {
+    .logo {
+        margin: 10px;
+        padding: 20px;
+    }
+
+
+    .maintext {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    .features-panel {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .price-panel {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .price-panel div {
+        width: 60%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:420px) {
+    .logo {
+        padding: 10px;
+        height: auto;
+
+    }
+
+    .logo img {
+        width: 220px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .maintext {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 20px;
+    }
+
+    .logo span {
+        line-height: normal;
+        padding: 20px;
+    }
+
+    .reffrallink {
+        display: inline;
+        line-height: 0px;
+    }
+
+    .price-panel button {
+        line-height: normal;
+        padding: 10px 50px;
+        font-size: 16px;
+    }
+
+    .features-panel {
+        padding: 40px;
+        margin-top: 0px;
+    }
+
+    .features-panel div {
+        padding: 0px;
+        margin: auto;
+    }
+
+    .infobutton {
+        line-height: normal;
+    }
+
+    .price-panel div {
+        width: 80%;
+    }
+
+    @media(max-width:360px) {
+        main {
+            padding: 0px;
+            margin: auto;
+        }
+
+        .logo {
+            margin: 0px;
+        }
+    }
+
+    @media(max-width:260px) {
+        .logo img {
+            width: 90px;
+            height: auto;
+        }
+
+        .logo {
+            flex-wrap: nowrap;
+        }
+    }
 }
