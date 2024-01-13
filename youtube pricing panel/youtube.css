@@ -1,5 +1,5 @@
 main {
-    background-color: aliceblue;
+
     margin: 30px 30px;
 }
 
@@ -10,6 +10,7 @@ img {
 }
 
 .maintext {
+
     display: block;
     margin: 0px;
     font-family: sans-serif;
@@ -20,6 +21,7 @@ img {
 }
 
 .logo {
+    background-image: linear-gradient(rgb(208, 233, 255), white);
     padding-top: 10px;
     margin: 70px;
     margin-bottom: 10px;
@@ -74,7 +76,7 @@ a {
 }
 
 .reffrallink {
-    display: inlinblock;
+
     cursor: pointer;
     line-height: 0px;
 }
@@ -109,13 +111,89 @@ a {
 }
 
 .price-panel {
+
     margin-top: 90px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 10px;
 
 }
 
-.price-panel span {
+.price-panel div {
+    width: 28%;
+    padding: 10px;
+    border: 1px solid rgb(245, 244, 244);
+    box-shadow: 1px 5px 10px 5px rgb(230, 229, 229);
+    border-radius: 24px;
+}
+
+.price-panel div span {
+    text-align: left;
     display: block;
+
+
+}
+
+.heading img {
+    padding-right: 10px;
+    margin-top: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.heading {
+    line-height: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 0px;
+    font-size: 25px;
+    font-family: sans-serif monospace;
+    font-weight: 700;
+}
+
+.duration {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+    margin-top: 10px;
+    line-height: 10px;
+
+}
+
+.price {
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.trial {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(39, 38, 38);
+    line-height: 8px;
+}
+
+.details {
+    padding-top: 5px;
+    line-height: 15px;
+    font-size: 0.8rem;
+    color: rgb(100, 98, 98);
+
+}
+
+.price-panel button {
+    width: 100%;
+    margin: 15px auto;
+    background-color: #c9dffb;
+    color: rgb(30, 0, 201);
+    border: none;
+
+}
+
+.price-panel button:hover {
+    background-color: #80b3f6;
+}
+
+.individual button {
+    background-color: #0754b9;
+    color: azure;
 }
