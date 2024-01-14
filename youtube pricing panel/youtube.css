@@ -196,6 +196,7 @@ a {
 }
 
 .individual button {
+    margin-top: 30px;
     background-color: #0754b9;
     color: azure;
 }
